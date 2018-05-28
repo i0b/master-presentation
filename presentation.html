@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link href="lib/styles.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="lib/uulm/uulm.css" media="screen" rel="stylesheet" type="text/css" />
+	<meta charset='utf-8'>
+	<script src='lib/slides.js'></script>
+
+	<title>HTML5 Slide Deck – uulm Style</title>
+
+</head>
+
+<body style='display: none'>
+
+	<div class='slides layout-normal template-uulm-in'>
+		<!--
+			Your slides (<article>s) go here. You can group them using <section>s
+			Every slide must be part of a section. If a section contains a <header>,
+			its content will be used as TOC label. If you don't want to group your
+			slides, just put all of your <article>s in a single <section>.
+		-->
+
+		<section>
+			<article class='title-slide'>
+				<h1 id="title">ImmerVR</h1>
+				<h2 id="author">
+					Leo Hnatek<br>Final Presentation
+				</h2>
+				<h4 id="subtitle">
+          Actuating the Facial Contact Area<br>of a Head-Mounted Display<br>for Increased Immersion
+				</h4>
+				<p>
+					<img id="title-header" src='assets/images/header-alternative.jpg'>
+					<img id="uulm-logo" src='lib/uulm/uulm_logo.svg'>
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<header>Introduction</header>
+
+			<article>
+				<h3>Introduction</h3>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/introduction.jpg'>
+				</p>
+				<p>
+          VR devices today use auditory, visual and haptic stimuli
+				</p>
+				<div class='source'>Source: NASA Goddard Space Flight Center</div>
+			</article>
+
+			<article>
+				<h3>Introduction</h3>
+				<h4>Reasearch Questions</h4>
+				<ul>
+					<li>Does the use of multiple stimuli increase the sensation of immersion?</li>
+					<li>Can we influence the emotions of users?</li>
+				</ul>
+				<h4>Goals</h4>
+				<ul>
+					<li>Create a software and hardware framework that can be used for future research</li>
+					<li>Addition of vibration, temperature, and EMS actuation to a VR device's face cushion</li>
+				</ul>
+			</article>
+    </section>
+
+		<section>
+			<header>Related Work</header>
+
+			<article>
+				<h3>Haptic Feedback</h3>
+				<p>
+					<img class='centered' style='height: 180px' src='assets/images/related-work/haptic-head.png'>
+				</p>
+				<ul>
+					<li>high precision with recognation rates of 96.4%, Oliver Beren Kaul and Micael Rohs</li>
+					<li>phantom sensation at vibrator distances below two point threshold, Kerdegari et al. and Lee et al.</li>
+					<li>sensation of a false heartbeat can influence emotions, Narihiro Nishimura et al.</li>
+				</ul>
+				<div class='source'>Source: Oliver Beren Kaul and Micael Rohs, Haptichead, CHI 2017</div>
+			</article>
+
+			<article>
+				<h3>Temperature Feedback</h3>
+				<p>
+					<img class='centered' style='height: 200px' src='assets/images/related-work/thermo-vr.png'>
+				</p>
+				<ul>
+					<li>Using temperature actuation increases level of immersion</li>
+					<li>Aceptable acuracy, with directional queues and five actuators</li>
+          <li>Use of moving patterns possible</li>
+				</ul>
+				<div class='source'>Source: Roshan Peiris, Wei Peng, Zikun Chen, et al., ThermoVR, CHI 2017</div>
+			</article>
+
+			<article>
+				<h3>EMS Feedback</h3>
+				<p>
+					<img class='centered' style='height: 250px' src='assets/images/related-work/treesense.jpg'>
+				</p>
+				<ul>
+  				<li>
+            TreeSense creates sensations of branches growing and birds landing on them felt through electrodes on arms
+          </li>
+  				<li>
+  					EMS often used for muscle contraction, i.e., muscle movement
+          </li>
+        </ul>
+
+				<div class='source'>Source: https://www.media.mit.edu/projects/treesense/</div>
+			</article>
+
+			<article>
+				<h3>Goals Based on Related Work</h3>
+				<h4>Vibration</h4>
+				<ul>
+          <li>Create vibration pattens such as false heartbeat</li>
+					<li>High resolution to enable research of phantom sensation</li>
+				</ul>
+				<h4>EMS</h4>
+				<ul>
+					<li>Use EMS to create tickling sensation on face</li>
+				</ul>
+				<h4>Multisensory Stimuli</h4>
+				<ul>
+					<li>Multiple sources of stimuli simultatiously</li>
+					<li>Merge stimuli to increase immersion<br>e.g. thunderstorm with cool rain and the sensation of ligthnings</li>
+				</ul>
+			</article>
+    </section>
+
+
+		<section>
+			<header>Hardware Overview</header>
+
+			<article>
+				<h3>General Overview</h3>
+				<h4>
+          Hardware
+        </h4>
+        Modular prototype with actuators embedded inside
+        the facial cushion of an HTC Vive headset
+				<h4>
+          Software
+        </h4>
+				<ul>
+					<li>
+            Modular embedded software library
+          </li>
+					<li>
+            Unity integration
+          </li>
+				</ul>
+				<h4>
+          Study Design
+        </h4>
+        Design of two studies that will be conducted
+			</article>
+
+			<article>
+				<h3>Hardware Overview</h3>
+        <br> <br> <br>
+				<p>
+					<img class='centered' style='width: 700px' src='assets/images/setup/boxed.svg'>
+				</p>
+			</article>
+
+			<article>
+				<h4>
+          Prototype 1
+        </h4>
+				<ul>
+					<li>
+            Initial prototype with vibration actuators
+          </li>
+					<li>
+            Use of vibration patterns
+          </li>
+				</ul>
+				<h4>
+          Prototype 2
+        </h4>
+				<ul>
+					<li>
+            Higher resolution of vibration acutators
+          </li>
+					<li>
+            Introduction of EMS actuators
+          </li>
+				</ul>
+				<h4>
+          Prototype 3
+        </h4>
+				<ul>
+					<li>
+            Introduction of temerature actuators
+          </li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>Overview Modules</h3>
+        <br> <br> <br>
+				<p>
+					<img class='centered' style='width: 750px' src='assets/images/setup/layout.svg'>
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<header>Prototypes</header>
+			<article>
+				<h3>Vibration Actuators (Prototype 2)</h3>
+				<p>
+					<img class='centered' style='height: 350px' src='assets/images/prototype-2-vibration.png'>
+				</p>
+				<p>
+					<img class='centered' style='width: 600px' src='assets/images/layout-vibration.svg'>
+				</p>
+			</article>
+
+			<article>
+				<h3>EMS Actuators (Prototype 2)</h3>
+				<p>
+					<img class='centered' style='height: 350px' src='assets/images/prototype-2-EMS.png'>
+				</p>
+				<p>
+					<img class='centered' style='width: 600px' src='assets/images/layout-ems.svg'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Temperature Actuators (Prototype 3)</h3>
+				<p>
+					<img class='centered' style='height: 350px' src='assets/images/prototype-3-temperature.png'>
+				</p>
+				<p>
+					<img class='centered' style='width: 600px' src='assets/images/layout-temperature.svg'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Facial Cushion: Overview</h3>
+        <br>
+				<p>
+					<img class='centered' style='height: 450px' src='assets/images/mask-full.svg'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Facial Cushion: Device</h3>
+        <br>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/facial-cushion-prototype.jpg'>
+				</p>
+			</article>
+		</section>
+
+		<section>
+			<header>Software</header>
+
+			<article>
+				<h3>Embedded Software</h3>
+				<p>
+					<img class='centered' style='height: 500px' src='assets/images/embedded-software.svg'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Example JSON Commands</h3>
+        <br>
+        <p>
+          Set a zero value to two modules that are in direct mode
+        </p>
+				<section>
+					<pre>
+{"modules":[{"id":0,"values":[0,0,0,0]},{"id":2,"values":[0,0]}]}
+          </pre>
+				</section>
+
+        <br>
+        <p>
+          Set module with id 1 into heartbeat mode, an intensity
+          of 50% and interval of 80ms between beats
+        </p>
+				<section>
+					<pre>
+{"id": 1, "mode": "heartbeat", "intensity": 50, "interval": 80 }
+          </pre>
+				</section>
+			</article>
+
+      <article>
+				<h3>Virtual Representation of Actuators</h3>
+        <br>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/unity-actuators.png'>
+				</p>
+      </article>
+
+      <article>
+				<h3>Collision Scenario</h3>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/unity-collision.png'>
+				</p>
+        <p>Object with physical attributes <i>mass, temperature, charge.</i><br>
+           It creates cooling, vibration and EMS actuations.</p>
+      </article>
+
+      <article>
+				<h3>Ambient Scenario</h3>
+				<p>
+					<img class='centered' style='width: 600px' src='assets/images/test/cave.png'>
+				</p>
+				<p>
+					<img class='centered' style='width: 600px' src='assets/images/test/outside.png'>
+				</p>
+				<div class='source'>Source: Dennis Wolf</div>
+      </article>
+
+
+		<section>
+			<header>Study Designs</header>
+
+      <article>
+				<h3>Study Design 1: Correlation Between Actuators<br>Two-Alternative Forced Choice Study</h3>
+        <br>
+				<p>
+					<img class='centered' style='width: 700px' src='assets/images/two-alternative-forced-choice-1.svg'>
+				</p>
+				<p>
+          <strong>Part one:</strong> increasing sensation with two actuator types
+				</p>
+        <br>
+				<p>
+					<img class='centered' style='width: 700px' src='assets/images/two-alternative-forced-choice-2.svg'>
+				</p>
+				<p>
+          <strong>Part two:</strong> increasing the resolution of one actuator type with the help of another
+				</p>
+      </article>
+
+      <article>
+				<h3>Study Design 1: Test Environment</h3>
+				<p>
+					<img class='centered' style='width: 500px' src='assets/images/test/unity-test-pair.png'>
+				</p>
+				<p>
+					<img class='centered' style='width: 500px' src='assets/images/test/unity-demo-test.png'>
+				</p>
+      </article>
+
+      <article>
+				<h3>Study Design 2</h3>
+        <br><br><br><br>
+        TODO<br><br>
+        E2I study to test if our prototype in fact does increase the sensation of imersion
+      </article>
+
+		</section>
+
+		<section>
+			<header>Conclusion</header>
+      <article>
+				<h3>Conclusion</h3>
+				<p>
+  				<ul>
+  					<li>Built a modular framework that can be used and extended for future studies</li>
+  					<li><strong>Hardware:</strong> three iterations of protytype<br> three actuator types (Vibration, Temperature, EMS)<br> self-contained device</li>
+  					<li><strong>Software:</strong> embedded framework, Unity integration</li>
+  					<li><strong>Physical Model:</strong> foundation for realistic representation of objects</li>
+  					<li><strong>Evaluation:</strong> two studies planned, conducted in succession to thresis</li>
+  				</ul>
+        </p>
+			</article>
+
+		</section>
+
+		<section>
+
+			<article>
+				<h3>Module Connector</h3>
+        <br><br>
+				<p>
+					<img class='centered' style='height: 300px' src='assets/images/svg/i2c-connector.svg'>
+				</p>
+        <br>
+				<p>
+          Connector of modules, with power lines and data lines
+				</p>
+			</article>
+
+			<article>
+				<h3>Haptic Feedback</h3>
+				<ul>
+					<li><strong>Haptichead (Oliver Beren Kaul and Micael Rohs):</strong> high precision with recognation rates of 96.4%</li>
+					<li><strong>Kerdegari et al. and Lee et al.:</strong> phantom sensation at actuator distances below two point threshold</li>
+					<li><strong>Narihiro Nishimura et al.:</strong> sensation of a false heartbeat can influence emotions</li>
+				</ul>
+				<h4>Goals</h4>
+				<ul>
+					<li>High resolution to enable research of phantom sensation</li>
+          <li>Create vibration pattens such as false heartbeat</li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>Temperature Feedback: ThermoVR</h3>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/related-work/thermo-vr.png'>
+				</p>
+				<div class='source'>Source: ThermoVR, CHI 2017</div>
+				<p>
+          Physical Device
+				</p>
+			</article>
+
+			<article>
+				<h3>Temperature Feedback: ThermoVR</h3>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/related-work/thermo-vr-world.png'>
+				</p>
+				<div class='source'>Source: ThermoVR, CHI 2017</div>
+				<p>
+            Virtual environment in their study setup.
+				</p>
+			</article>
+
+			<article>
+				<h3>Temperature Feedback</h3>
+				<h4>Roshan Peiris, Wei Peng, Zikun Chen, et al.</h4>
+				<ul>
+					<li>Cold recognition high, many sensory nerves measuring coldness in the facial area</li>
+					<li>Moving patterns fesable</li>
+					<li>Higher level of immersion</li>
+				</ul>
+				<h4>Goals</h4>
+				<ul>
+					<li>Reasonable resolution similar to the ThermoVR</li>
+					<li>Quick adjustment of temperature</li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>EMS Feedback: TreeSense</h3>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/related-work/treesense.jpg'>
+				</p>
+				<div class='source'>Source: https://www.media.mit.edu/projects/treesense/</div>
+				<p>
+          Electric Muscle Stimulation on arms creating sensations
+				</p>
+			</article>
+
+			<article>
+				<h3>EMS Feedback</h3>
+				<ul>
+					<li><strong>Usage:</strong> EMS often used for muscle contraction, i.e., muscle movement</li>
+					<li><strong>TreeSense:</strong> sensations of branches growing felt through electrodes on arms</li>
+				</ul>
+				<h4>Goals</h4>
+				<ul>
+					<li>Use EMS to create tickling sensation on face</li>
+					<li>Discover aplicable models EMS stimuli can be used for</li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>Multisensory Stimuli</h3>
+				<ul>
+					<li><strong>Ambiotherm:</strong> sensation of temperature and wind</li>
+					<li>Generally little reasearch with multisensory stimuli</li>
+				</ul>
+				<h4>Goals</h4>
+				<ul>
+					<li>Multiple sources of stimuli simultatiously</li>
+					<li>Merge stimuli to increase immersion<br>e.g. thunderstorm with cool rain and the sensation of ligthnings</li>
+				</ul>
+			</article>
+
+			<article>
+				<h3>Prototype 1</h3>
+        <br>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/prototype-1-vibration.png'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Prototype 2: Vibration</h3>
+        <br>
+				<p>
+					<img class='centered' style='height: 400px' src='assets/images/prototype-2-vibration.png'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Prototype 2: Vibration Pattern</h3>
+        <br> <br> <br>
+				<p>
+					<img class='centered' style='width: 750px' src='assets/images/vibration-left-right.svg'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Prototype 2: EMS</h3>
+        <br>
+				<p>
+					<img class='centered' style='height: 450px' src='assets/images/prototype-2-EMS.png'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Prototype 3</h3>
+				<p>
+					<img class='centered' style='height: 500px' src='assets/images/prototype-3-temperature.png'>
+				</p>
+			</article>
+
+			<article>
+				<h3>Physical Model</h3>
+        <br>
+        <p>
+          <strong>Goal:</strong>
+          Make objects tangible, i.e., objects can be felt on touch or when
+          they create sensation indirectly
+        </p>
+        <table>
+          <tr>
+            <th>Actuator</th><th>Collision</th><th>Ambient</th>
+          </tr>
+          <tr>
+            <td>Vibration</td><td>Mechanical Impulse</td><td>Gravity</td>
+          </tr>
+          <tr>
+            <td>Temperature</td><td>Thermal Conduction</td><td>Thermal Radiation</td>
+          </tr>
+          <tr>
+            <td>EMS</td><td>Electric Charge</td><td>Electrical Field</td>
+          </tr>
+        </table>
+			</article>
+
+      <article>
+				<h3>Object Attributes</h3>
+        <br>
+				<p>
+					<img class='centered' style='height: 350px' src='assets/images/unity-attributes.png'>
+				</p>
+        <p>Depending on what the object represents, attributes can be assigned and it can be declared an ambient object</p>
+      </article>
+		</section>
+	</div>
+
+</body>
+</html>
